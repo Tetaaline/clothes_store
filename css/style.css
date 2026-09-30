@@ -18,6 +18,7 @@ a {
     text-decoration: none;
 }
 
+
 .sidebar {
     position: fixed;
     left: 0;
@@ -64,4 +65,397 @@ a {
     padding: 7px 0 7px 18px;
     color: #777;
     font-size: 14px;
+}
+
+.nav-bottom {
+    margin-top: 50px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+
+.page {
+    margin-left: 250px;
+}
+
+.top-header {
+    height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 35px;
+    border-bottom: 1px solid #eee;
+    background: #fff;
+}
+
+.mobile-brand {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.header-actions {
+    display: flex;
+    gap: 22px;
+    font-size: 20px;
+}
+
+.header-actions a {
+    transition: transform 0.2s ease;
+}
+
+.header-actions a:hover {
+    transform: translateY(-2px);
+}
+
+
+.hero {
+    position: relative;
+    height: 620px;
+    overflow: hidden;
+    background: #ddd;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-content {
+    position: absolute;
+    left: 55px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.hero-content p {
+    font-size: 18px;
+    letter-spacing: 3px;
+    margin: 0 0 10px;
+}
+
+.hero-content h1 {
+    font-size: clamp(42px, 7vw, 82px);
+    font-weight: 400;
+    margin: 0 0 28px;
+}
+
+.shop-button {
+    display: inline-block;
+    padding: 14px 25px;
+    background: #fff;
+    color: #111;
+    font-size: 14px;
+    font-weight: 700;
+    transition: background 0.25s ease, color 0.25s ease;
+}
+
+.shop-button:hover {
+    background: #111;
+    color: #fff;
+}
+
+
+.products-section {
+    padding: 38px 35px 50px;
+}
+
+.section-heading h2 {
+    font-size: 22px;
+    font-weight: 400;
+    margin: 0 0 25px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px 18px;
+}
+
+.product-card {
+    min-width: 0;
+}
+
+.product-image {
+    position: relative;
+    height: 360px;
+    overflow: hidden;
+    background: #eee;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.04);
+}
+
+.product-card h3 {
+    font-size: 15px;
+    font-weight: 400;
+    margin: 14px 0 7px;
+}
+
+.product-card p {
+    margin: 0;
+    color: #555;
+    font-size: 14px;
+}
+
+.product-card strong {
+    color: #111;
+}
+
+.badge {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 8px 12px;
+    background: #111;
+    color: #fff;
+    font-size: 12px;
+    z-index: 2;
+}
+
+.badge.sale {
+    background: #d64545;
+}
+
+.buy-button {
+    position: absolute;
+    left: 50%;
+    bottom: 15px;
+    transform: translateX(-50%);
+    padding: 10px 18px;
+    background: #fff;
+    color: #111;
+    font-size: 13px;
+    font-weight: 700;
+    opacity: 0;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.product-card:hover .buy-button {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-3px);
+}
+
+.buy-button:hover {
+    background: #111;
+    color: #fff;
+}
+
+
+.newsletter {
+    padding: 55px 35px;
+    background: #222;
+    color: #fff;
+}
+
+.newsletter h2 {
+    font-size: 32px;
+    font-weight: 400;
+    margin: 0 0 12px;
+}
+
+.newsletter p {
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+.newsletter form {
+    display: flex;
+    max-width: 700px;
+}
+
+.newsletter label {
+    position: absolute;
+    left: -9999px;
+}
+
+.newsletter input {
+    flex: 1;
+    min-width: 0;
+    padding: 14px;
+    border: 0;
+    font-size: 14px;
+}
+
+.newsletter button,
+.contact-form button {
+    border: 0;
+    padding: 14px 24px;
+    background: #e75b5b;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.newsletter button:hover,
+.contact-form button:hover {
+    background: #c83f3f;
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr;
+    gap: 50px;
+    padding: 50px 35px;
+    background: #f5f5f5;
+}
+
+.footer h3 {
+    margin: 0 0 16px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.footer p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer > section > a {
+    display: block;
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 9px;
+    transition: color 0.2s ease;
+}
+
+.footer > section > a:hover {
+    color: #000;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.contact-form label {
+    font-size: 13px;
+    color: #555;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #ccc;
+    font: inherit;
+    resize: vertical;
+}
+
+.contact-form button {
+    align-self: flex-start;
+}
+
+.accept-title {
+    margin-top: 30px !important;
+}
+
+.copyright {
+    text-align: center;
+    padding: 18px;
+    background: #111;
+    color: #aaa;
+    font-size: 12px;
+}
+
+
+@media (max-width: 1000px) {
+    .sidebar {
+        width: 210px;
+    }
+
+    .page {
+        margin-left: 210px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero {
+        height: 520px;
+    }
+}
+
+@media (max-width: 650px) {
+    .sidebar {
+        position: static;
+        width: 100%;
+        height: auto;
+        border-right: 0;
+        border-bottom: 1px solid #eee;
+        padding: 20px;
+    }
+
+    .brand {
+        margin-bottom: 20px;
+    }
+
+    .nav-bottom {
+        margin-top: 20px;
+    }
+
+    .page {
+        margin-left: 0;
+    }
+
+    .top-header {
+        padding: 0 20px;
+    }
+
+    .hero {
+        height: 450px;
+    }
+
+    .hero-content {
+        left: 25px;
+    }
+
+    .hero-content h1 {
+        font-size: 44px;
+    }
+
+    .products-section,
+    .newsletter {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-image {
+        height: 430px;
+    }
+
+    .newsletter form {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .newsletter button {
+        width: 100%;
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+        padding: 40px 20px;
+    }
 }
